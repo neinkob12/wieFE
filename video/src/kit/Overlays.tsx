@@ -147,12 +147,12 @@ export const Labels: React.FC<{tl: Timeline; topic: Topic; look: Look}> = ({tl, 
 	);
 };
 
-// Filmkoernung (Rausch-Kachel, pro Frame deterministisch verschoben) + Vignette.
-// Kachel statt SVG-feTurbulence: auf der CPU um ein Vielfaches schneller.
-export const Grain: React.FC<{look: Look}> = ({look}) => {
+// Koernung (Rausch-Kachel) + Vignette. Statisch wie Papier: bewegtes Rauschen pro Frame hat das Video auf
+// ueber 300 MB aufgeblaeht und wird von TikToks Kompression ohnehin zu Matsch. animated=true fuer Film-Look.
+export const Grain: React.FC<{look: Look; animated?: boolean}> = ({look, animated = false}) => {
 	const f = useCurrentFrame();
-	const x = Math.floor(random(`gx${f}`) * 384);
-	const y = Math.floor(random(`gy${f}`) * 384);
+	const x = animated ? Math.floor(random(`gx${f}`) * 384) : 0;
+	const y = animated ? Math.floor(random(`gy${f}`) * 384) : 0;
 	return (
 		<AbsoluteFill style={{pointerEvents: 'none'}}>
 			<AbsoluteFill style={{background: `radial-gradient(ellipse 75% 60% at 50% 45%, transparent 55%, ${look.ink} 140%)`, opacity: look.vignette}} />

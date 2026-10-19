@@ -48,7 +48,7 @@ Alle Szenen benutzen nur Farb-Rollen (`ground`, `object`, `accent`, `energy` …
 
 | Look | Idee | Farben | Material/Licht | Schrift |
 |---|---|---|---|---|
-| **Diorama** (gewählt) | Warm & gedämpft, Welt als Insel mit Erdschichten | Sand `#E4D6BF`, Wiese `#5E8C76`, Creme `#F4EFE6`, Tinte `#2B2A33`, Akzent Orange `#E8743B`, Energie `#F2C14E` | Flat-Shading (Low-Poly-Facetten), matt, warme Sonne, Körnung 9 % | Manrope 800 + Fraunces 900 |
+| **Diorama** (gewählt) | Warm & gedämpft, Welt als Insel mit Erdschichten | Sand `#E4D6BF`, Wiese `#5E8C76`, Creme `#F4EFE6`, Tinte `#2B2A33`, Akzent Orange `#E8743B`, Energie `#F2C14E` | Flat-Shading (Low-Poly-Facetten), matt, warme Sonne, statische Papier-Körnung | Manrope 800 + Fraunces 900 |
 | **Nachtschicht** (Vorschlag) | Dunkle Bühne, Technik wird zur Lichtspur. Laut Recherche näher an Simplicissimus | Nachtblau `#0B1424`, Stahl `#D8E3EF`, Akzent `#FF8A3D`, Energie Cyan `#5CE1FF` | Kühles Licht, Energie leuchtet (additiver Schein), starke Vignette | Space Grotesk |
 | **Knete** (Vorschlag) | Weiches Spielzeug-Diorama in Pastell | Himmel `#BFE3F2`, Mint `#A8DDB5`, Akzent Pink `#FF6F91`, Gelb `#FFC94A` | Weich schattiert, viel Umgebungslicht, kaum Körnung | Nunito 900 |
 
