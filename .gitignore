@@ -1,0 +1,8 @@
+video/node_modules/
+out/
+video/public/audio/
+__pycache__/
+*.pyc
+TK_cookies*.json
+.venv/
+.env

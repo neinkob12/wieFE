@@ -1,0 +1,1521 @@
+{
+ "id": "windrad",
+ "topic": "windrad",
+ "title": "Wie funktioniert eigentlich ein Windrad?",
+ "fps": 30,
+ "durationInFrames": 1872,
+ "look": "diorama",
+ "draftVoice": true,
+ "voice": [
+  {
+   "src": "audio/windrad/piper_8d189e12b04c.mp3",
+   "from": 0
+  },
+  {
+   "src": "audio/windrad/piper_b23fa7915870.mp3",
+   "from": 67
+  },
+  {
+   "src": "audio/windrad/piper_d008507d33d7.mp3",
+   "from": 148
+  },
+  {
+   "src": "audio/windrad/piper_8b95f56bd9b3.mp3",
+   "from": 211
+  },
+  {
+   "src": "audio/windrad/piper_ab13798e4052.mp3",
+   "from": 285
+  },
+  {
+   "src": "audio/windrad/piper_0c302458cbfe.mp3",
+   "from": 411
+  },
+  {
+   "src": "audio/windrad/piper_0e5b2fecfc73.mp3",
+   "from": 510
+  },
+  {
+   "src": "audio/windrad/piper_cfb361ac9cb2.mp3",
+   "from": 631
+  },
+  {
+   "src": "audio/windrad/piper_852d205852d8.mp3",
+   "from": 730
+  },
+  {
+   "src": "audio/windrad/piper_1b82e466f3ca.mp3",
+   "from": 774
+  },
+  {
+   "src": "audio/windrad/piper_847ae8cab2a0.mp3",
+   "from": 859
+  },
+  {
+   "src": "audio/windrad/piper_b04a52ae9f21.mp3",
+   "from": 920
+  },
+  {
+   "src": "audio/windrad/piper_c7e0916aeb2d.mp3",
+   "from": 1008
+  },
+  {
+   "src": "audio/windrad/piper_0c85a63ab06f.mp3",
+   "from": 1100
+  },
+  {
+   "src": "audio/windrad/piper_fd0805f45440.mp3",
+   "from": 1161
+  },
+  {
+   "src": "audio/windrad/piper_e4dc304cb868.mp3",
+   "from": 1296
+  },
+  {
+   "src": "audio/windrad/piper_936910afae77.mp3",
+   "from": 1363
+  },
+  {
+   "src": "audio/windrad/piper_06ad801185c3.mp3",
+   "from": 1467
+  },
+  {
+   "src": "audio/windrad/piper_1f8c36570361.mp3",
+   "from": 1511
+  },
+  {
+   "src": "audio/windrad/piper_261cb4139f13.mp3",
+   "from": 1723
+  },
+  {
+   "src": "audio/windrad/piper_70abab7206d0.mp3",
+   "from": 1832
+  }
+ ],
+ "words": [
+  {
+   "w": "Rund",
+   "s": 0,
+   "e": 7
+  },
+  {
+   "w": "300",
+   "s": 7,
+   "e": 22
+  },
+  {
+   "w": "Kilometer",
+   "s": 22,
+   "e": 43
+  },
+  {
+   "w": "pro",
+   "s": 43,
+   "e": 49
+  },
+  {
+   "w": "Stunde.",
+   "s": 49,
+   "e": 60
+  },
+  {
+   "w": "So",
+   "s": 67,
+   "e": 73
+  },
+  {
+   "w": "schnell",
+   "s": 73,
+   "e": 79
+  },
+  {
+   "w": "rast",
+   "s": 79,
+   "e": 85
+  },
+  {
+   "w": "die",
+   "s": 85,
+   "e": 92
+  },
+  {
+   "w": "Spitze",
+   "s": 92,
+   "e": 102
+  },
+  {
+   "w": "dieses",
+   "s": 102,
+   "e": 113
+  },
+  {
+   "w": "Flügels",
+   "s": 113,
+   "e": 123
+  },
+  {
+   "w": "durch",
+   "s": 123,
+   "e": 129
+  },
+  {
+   "w": "die",
+   "s": 129,
+   "e": 135
+  },
+  {
+   "w": "Luft.",
+   "s": 135,
+   "e": 142
+  },
+  {
+   "w": "Von",
+   "s": 148,
+   "e": 154
+  },
+  {
+   "w": "unten",
+   "s": 154,
+   "e": 165
+  },
+  {
+   "w": "sieht",
+   "s": 165,
+   "e": 171
+  },
+  {
+   "w": "das",
+   "s": 171,
+   "e": 177
+  },
+  {
+   "w": "ganz",
+   "s": 177,
+   "e": 183
+  },
+  {
+   "w": "gemütlich",
+   "s": 183,
+   "e": 198
+  },
+  {
+   "w": "aus.",
+   "s": 198,
+   "e": 204
+  },
+  {
+   "w": "Aber",
+   "s": 211,
+   "e": 221
+  },
+  {
+   "w": "wie",
+   "s": 221,
+   "e": 227
+  },
+  {
+   "w": "macht",
+   "s": 227,
+   "e": 232
+  },
+  {
+   "w": "so",
+   "s": 232,
+   "e": 238
+  },
+  {
+   "w": "ein",
+   "s": 238,
+   "e": 244
+  },
+  {
+   "w": "Windrad",
+   "s": 244,
+   "e": 254
+  },
+  {
+   "w": "eigentlich",
+   "s": 254,
+   "e": 268
+  },
+  {
+   "w": "Strom?",
+   "s": 268,
+   "e": 274
+  },
+  {
+   "w": "Die",
+   "s": 285,
+   "e": 291
+  },
+  {
+   "w": "Nabe",
+   "s": 291,
+   "e": 302
+  },
+  {
+   "w": "sitzt",
+   "s": 302,
+   "e": 309
+  },
+  {
+   "w": "rund",
+   "s": 309,
+   "e": 315
+  },
+  {
+   "w": "150",
+   "s": 315,
+   "e": 335
+  },
+  {
+   "w": "Meter",
+   "s": 335,
+   "e": 346
+  },
+  {
+   "w": "hoch,",
+   "s": 346,
+   "e": 352
+  },
+  {
+   "w": "fast",
+   "s": 356,
+   "e": 362
+  },
+  {
+   "w": "so",
+   "s": 362,
+   "e": 369
+  },
+  {
+   "w": "hoch",
+   "s": 369,
+   "e": 375
+  },
+  {
+   "w": "wie",
+   "s": 375,
+   "e": 381
+  },
+  {
+   "w": "der",
+   "s": 381,
+   "e": 388
+  },
+  {
+   "w": "Kölner",
+   "s": 388,
+   "e": 399
+  },
+  {
+   "w": "Dom.",
+   "s": 399,
+   "e": 405
+  },
+  {
+   "w": "Die",
+   "s": 411,
+   "e": 418
+  },
+  {
+   "w": "Flügel",
+   "s": 418,
+   "e": 430
+  },
+  {
+   "w": "sind",
+   "s": 430,
+   "e": 437
+  },
+  {
+   "w": "geformt",
+   "s": 437,
+   "e": 449
+  },
+  {
+   "w": "wie",
+   "s": 449,
+   "e": 456
+  },
+  {
+   "w": "die",
+   "s": 456,
+   "e": 463
+  },
+  {
+   "w": "Tragfläche",
+   "s": 463,
+   "e": 480
+  },
+  {
+   "w": "eines",
+   "s": 480,
+   "e": 491
+  },
+  {
+   "w": "Flugzeugs.",
+   "s": 491,
+   "e": 503
+  },
+  {
+   "w": "Auf",
+   "s": 510,
+   "e": 516
+  },
+  {
+   "w": "der",
+   "s": 516,
+   "e": 523
+  },
+  {
+   "w": "gewölbten",
+   "s": 523,
+   "e": 538
+  },
+  {
+   "w": "Seite",
+   "s": 538,
+   "e": 549
+  },
+  {
+   "w": "strömt",
+   "s": 549,
+   "e": 555
+  },
+  {
+   "w": "die",
+   "s": 555,
+   "e": 562
+  },
+  {
+   "w": "Luft",
+   "s": 562,
+   "e": 568
+  },
+  {
+   "w": "schneller",
+   "s": 568,
+   "e": 579
+  },
+  {
+   "w": "vorbei,",
+   "s": 579,
+   "e": 590
+  },
+  {
+   "w": "dort",
+   "s": 594,
+   "e": 601
+  },
+  {
+   "w": "entsteht",
+   "s": 601,
+   "e": 612
+  },
+  {
+   "w": "ein",
+   "s": 612,
+   "e": 618
+  },
+  {
+   "w": "Sog.",
+   "s": 618,
+   "e": 624
+  },
+  {
+   "w": "Der",
+   "s": 631,
+   "e": 637
+  },
+  {
+   "w": "zieht",
+   "s": 637,
+   "e": 644
+  },
+  {
+   "w": "den",
+   "s": 644,
+   "e": 650
+  },
+  {
+   "w": "Flügel",
+   "s": 650,
+   "e": 661
+  },
+  {
+   "w": "zur",
+   "s": 661,
+   "e": 667
+  },
+  {
+   "w": "Seite,",
+   "s": 667,
+   "e": 678
+  },
+  {
+   "w": "und",
+   "s": 682,
+   "e": 689
+  },
+  {
+   "w": "der",
+   "s": 689,
+   "e": 695
+  },
+  {
+   "w": "Rotor",
+   "s": 695,
+   "e": 706
+  },
+  {
+   "w": "dreht",
+   "s": 706,
+   "e": 712
+  },
+  {
+   "w": "sich.",
+   "s": 712,
+   "e": 718
+  },
+  {
+   "w": "Schauen",
+   "s": 730,
+   "e": 738
+  },
+  {
+   "w": "wir",
+   "s": 738,
+   "e": 746
+  },
+  {
+   "w": "mal",
+   "s": 746,
+   "e": 754
+  },
+  {
+   "w": "rein.",
+   "s": 754,
+   "e": 762
+  },
+  {
+   "w": "Der",
+   "s": 774,
+   "e": 780
+  },
+  {
+   "w": "Rotor",
+   "s": 780,
+   "e": 791
+  },
+  {
+   "w": "dreht",
+   "s": 791,
+   "e": 797
+  },
+  {
+   "w": "sich",
+   "s": 797,
+   "e": 803
+  },
+  {
+   "w": "nur",
+   "s": 803,
+   "e": 809
+  },
+  {
+   "w": "etwa",
+   "s": 809,
+   "e": 820
+  },
+  {
+   "w": "zehnmal",
+   "s": 820,
+   "e": 831
+  },
+  {
+   "w": "pro",
+   "s": 831,
+   "e": 837
+  },
+  {
+   "w": "Minute.",
+   "s": 837,
+   "e": 852
+  },
+  {
+   "w": "Für",
+   "s": 859,
+   "e": 866
+  },
+  {
+   "w": "Strom",
+   "s": 866,
+   "e": 873
+  },
+  {
+   "w": "ist",
+   "s": 873,
+   "e": 880
+  },
+  {
+   "w": "das",
+   "s": 880,
+   "e": 887
+  },
+  {
+   "w": "viel",
+   "s": 887,
+   "e": 894
+  },
+  {
+   "w": "zu",
+   "s": 894,
+   "e": 901
+  },
+  {
+   "w": "langsam.",
+   "s": 901,
+   "e": 913
+  },
+  {
+   "w": "Darum",
+   "s": 920,
+   "e": 930
+  },
+  {
+   "w": "sitzt",
+   "s": 930,
+   "e": 936
+  },
+  {
+   "w": "bei",
+   "s": 936,
+   "e": 942
+  },
+  {
+   "w": "vielen",
+   "s": 942,
+   "e": 952
+  },
+  {
+   "w": "Windrädern",
+   "s": 952,
+   "e": 967
+  },
+  {
+   "w": "dahinter",
+   "s": 967,
+   "e": 981
+  },
+  {
+   "w": "ein",
+   "s": 981,
+   "e": 987
+  },
+  {
+   "w": "Getriebe.",
+   "s": 987,
+   "e": 1002
+  },
+  {
+   "w": "Aus",
+   "s": 1008,
+   "e": 1014
+  },
+  {
+   "w": "einer",
+   "s": 1014,
+   "e": 1025
+  },
+  {
+   "w": "langsamen",
+   "s": 1025,
+   "e": 1040
+  },
+  {
+   "w": "Umdrehung",
+   "s": 1040,
+   "e": 1055
+  },
+  {
+   "w": "macht",
+   "s": 1055,
+   "e": 1061
+  },
+  {
+   "w": "es",
+   "s": 1061,
+   "e": 1067
+  },
+  {
+   "w": "rund",
+   "s": 1067,
+   "e": 1073
+  },
+  {
+   "w": "hundert",
+   "s": 1073,
+   "e": 1083
+  },
+  {
+   "w": "schnelle.",
+   "s": 1083,
+   "e": 1094
+  },
+  {
+   "w": "Die",
+   "s": 1100,
+   "e": 1106
+  },
+  {
+   "w": "schnelle",
+   "s": 1106,
+   "e": 1116
+  },
+  {
+   "w": "Welle",
+   "s": 1116,
+   "e": 1125
+  },
+  {
+   "w": "dreht",
+   "s": 1125,
+   "e": 1131
+  },
+  {
+   "w": "den",
+   "s": 1131,
+   "e": 1137
+  },
+  {
+   "w": "Generator.",
+   "s": 1137,
+   "e": 1154
+  },
+  {
+   "w": "Darin",
+   "s": 1161,
+   "e": 1172
+  },
+  {
+   "w": "sausen",
+   "s": 1172,
+   "e": 1183
+  },
+  {
+   "w": "Magnete",
+   "s": 1183,
+   "e": 1198
+  },
+  {
+   "w": "an",
+   "s": 1198,
+   "e": 1205
+  },
+  {
+   "w": "Kupferspulen",
+   "s": 1205,
+   "e": 1225
+  },
+  {
+   "w": "vorbei,",
+   "s": 1225,
+   "e": 1236
+  },
+  {
+   "w": "und",
+   "s": 1240,
+   "e": 1246
+  },
+  {
+   "w": "das",
+   "s": 1246,
+   "e": 1253
+  },
+  {
+   "w": "schubst",
+   "s": 1253,
+   "e": 1259
+  },
+  {
+   "w": "Strom",
+   "s": 1259,
+   "e": 1266
+  },
+  {
+   "w": "durch",
+   "s": 1266,
+   "e": 1272
+  },
+  {
+   "w": "die",
+   "s": 1272,
+   "e": 1278
+  },
+  {
+   "w": "Drähte.",
+   "s": 1278,
+   "e": 1289
+  },
+  {
+   "w": "Ein",
+   "s": 1296,
+   "e": 1303
+  },
+  {
+   "w": "Transformator",
+   "s": 1303,
+   "e": 1324
+  },
+  {
+   "w": "macht",
+   "s": 1324,
+   "e": 1331
+  },
+  {
+   "w": "die",
+   "s": 1331,
+   "e": 1338
+  },
+  {
+   "w": "Spannung",
+   "s": 1338,
+   "e": 1350
+  },
+  {
+   "w": "hoch.",
+   "s": 1350,
+   "e": 1356
+  },
+  {
+   "w": "Dann",
+   "s": 1363,
+   "e": 1369
+  },
+  {
+   "w": "fließt",
+   "s": 1369,
+   "e": 1376
+  },
+  {
+   "w": "der",
+   "s": 1376,
+   "e": 1382
+  },
+  {
+   "w": "Strom",
+   "s": 1382,
+   "e": 1389
+  },
+  {
+   "w": "durchs",
+   "s": 1389,
+   "e": 1395
+  },
+  {
+   "w": "Kabel",
+   "s": 1395,
+   "e": 1406
+  },
+  {
+   "w": "den",
+   "s": 1406,
+   "e": 1413
+  },
+  {
+   "w": "Turm",
+   "s": 1413,
+   "e": 1419
+  },
+  {
+   "w": "hinunter",
+   "s": 1419,
+   "e": 1435
+  },
+  {
+   "w": "und",
+   "s": 1435,
+   "e": 1441
+  },
+  {
+   "w": "ab",
+   "s": 1441,
+   "e": 1447
+  },
+  {
+   "w": "ins",
+   "s": 1447,
+   "e": 1454
+  },
+  {
+   "w": "Netz.",
+   "s": 1454,
+   "e": 1460
+  },
+  {
+   "w": "Bis",
+   "s": 1467,
+   "e": 1472
+  },
+  {
+   "w": "in",
+   "s": 1472,
+   "e": 1477
+  },
+  {
+   "w": "deine",
+   "s": 1477,
+   "e": 1486
+  },
+  {
+   "w": "Steckdose.",
+   "s": 1486,
+   "e": 1499
+  },
+  {
+   "w": "Und",
+   "s": 1511,
+   "e": 1517
+  },
+  {
+   "w": "jetzt",
+   "s": 1517,
+   "e": 1523
+  },
+  {
+   "w": "kommt's:",
+   "s": 1523,
+   "e": 1529
+  },
+  {
+   "w": "Bei",
+   "s": 1533,
+   "e": 1539
+  },
+  {
+   "w": "vollem",
+   "s": 1539,
+   "e": 1550
+  },
+  {
+   "w": "Wind",
+   "s": 1550,
+   "e": 1556
+  },
+  {
+   "w": "liefert",
+   "s": 1556,
+   "e": 1567
+  },
+  {
+   "w": "eine",
+   "s": 1567,
+   "e": 1577
+  },
+  {
+   "w": "einzige",
+   "s": 1577,
+   "e": 1592
+  },
+  {
+   "w": "Umdrehung",
+   "s": 1592,
+   "e": 1607
+  },
+  {
+   "w": "ungefähr",
+   "s": 1607,
+   "e": 1622
+  },
+  {
+   "w": "so",
+   "s": 1622,
+   "e": 1628
+  },
+  {
+   "w": "viel",
+   "s": 1628,
+   "e": 1634
+  },
+  {
+   "w": "Strom,",
+   "s": 1634,
+   "e": 1641
+  },
+  {
+   "w": "wie",
+   "s": 1645,
+   "e": 1651
+  },
+  {
+   "w": "ein",
+   "s": 1651,
+   "e": 1657
+  },
+  {
+   "w": "Haushalt",
+   "s": 1657,
+   "e": 1668
+  },
+  {
+   "w": "an",
+   "s": 1668,
+   "e": 1674
+  },
+  {
+   "w": "einem",
+   "s": 1674,
+   "e": 1684
+  },
+  {
+   "w": "ganzen",
+   "s": 1684,
+   "e": 1695
+  },
+  {
+   "w": "Tag",
+   "s": 1695,
+   "e": 1701
+  },
+  {
+   "w": "verbraucht.",
+   "s": 1701,
+   "e": 1712
+  },
+  {
+   "w": "Und",
+   "s": 1723,
+   "e": 1729
+  },
+  {
+   "w": "das",
+   "s": 1729,
+   "e": 1735
+  },
+  {
+   "w": "alles",
+   "s": 1735,
+   "e": 1745
+  },
+  {
+   "w": "mit",
+   "s": 1745,
+   "e": 1750
+  },
+  {
+   "w": "einem",
+   "s": 1750,
+   "e": 1760
+  },
+  {
+   "w": "Rotor,",
+   "s": 1760,
+   "e": 1770
+  },
+  {
+   "w": "der",
+   "s": 1774,
+   "e": 1780
+  },
+  {
+   "w": "von",
+   "s": 1780,
+   "e": 1786
+  },
+  {
+   "w": "unten",
+   "s": 1786,
+   "e": 1796
+  },
+  {
+   "w": "ganz",
+   "s": 1796,
+   "e": 1801
+  },
+  {
+   "w": "gemütlich",
+   "s": 1801,
+   "e": 1816
+  },
+  {
+   "w": "aussieht.",
+   "s": 1816,
+   "e": 1826
+  },
+  {
+   "w": "Aber",
+   "s": 1832,
+   "e": 1840
+  },
+  {
+   "w": "an",
+   "s": 1840,
+   "e": 1845
+  },
+  {
+   "w": "der",
+   "s": 1845,
+   "e": 1849
+  },
+  {
+   "w": "Spitze",
+   "s": 1849,
+   "e": 1857
+  },
+  {
+   "w": "sind",
+   "s": 1857,
+   "e": 1862
+  },
+  {
+   "w": "es",
+   "s": 1862,
+   "e": 1867
+  }
+ ],
+ "cues": [
+  {
+   "type": "shot",
+   "arg": "tip",
+   "f": 0
+  },
+  {
+   "type": "speed",
+   "arg": "on",
+   "f": 0
+  },
+  {
+   "type": "card",
+   "arg": "≈ 300 km/h",
+   "extra": "an der Flügelspitze",
+   "f": 0
+  },
+  {
+   "type": "shot",
+   "arg": "wide",
+   "extra": "55",
+   "f": 142
+  },
+  {
+   "type": "card",
+   "arg": "-",
+   "f": 148
+  },
+  {
+   "type": "speed",
+   "arg": "off",
+   "f": 148
+  },
+  {
+   "type": "shot",
+   "arg": "hoehe",
+   "extra": "50",
+   "f": 279
+  },
+  {
+   "type": "mass",
+   "arg": "on",
+   "f": 285
+  },
+  {
+   "type": "label",
+   "arg": "nabe",
+   "extra": "150 m",
+   "f": 309
+  },
+  {
+   "type": "dom",
+   "arg": "on",
+   "f": 356
+  },
+  {
+   "type": "label",
+   "arg": "dom",
+   "extra": "Kölner Dom · 157 m|rd",
+   "f": 388
+  },
+  {
+   "type": "shot",
+   "arg": "blatt",
+   "extra": "50",
+   "f": 405
+  },
+  {
+   "type": "mass",
+   "arg": "off",
+   "f": 411
+  },
+  {
+   "type": "dom",
+   "arg": "off",
+   "f": 411
+  },
+  {
+   "type": "wind",
+   "arg": "on",
+   "f": 411
+  },
+  {
+   "type": "hl",
+   "arg": "blatt",
+   "f": 411
+  },
+  {
+   "type": "shot",
+   "arg": "gondel",
+   "extra": "50",
+   "f": 724
+  },
+  {
+   "type": "hl",
+   "arg": "-",
+   "f": 730
+  },
+  {
+   "type": "wind",
+   "arg": "off",
+   "f": 730
+  },
+  {
+   "type": "xray",
+   "arg": "on",
+   "f": 730
+  },
+  {
+   "type": "shot",
+   "arg": "welle",
+   "extra": "40",
+   "f": 768
+  },
+  {
+   "type": "hl",
+   "arg": "welle",
+   "f": 774
+  },
+  {
+   "type": "shot",
+   "arg": "getriebe",
+   "extra": "36",
+   "f": 914
+  },
+  {
+   "type": "hl",
+   "arg": "getriebe",
+   "f": 920
+  },
+  {
+   "type": "label",
+   "arg": "getriebe",
+   "extra": "Getriebe",
+   "f": 987
+  },
+  {
+   "type": "shot",
+   "arg": "generator",
+   "extra": "36",
+   "f": 1094
+  },
+  {
+   "type": "hl",
+   "arg": "generator+welle2",
+   "f": 1100
+  },
+  {
+   "type": "fx",
+   "arg": "generator",
+   "f": 1100
+  },
+  {
+   "type": "label",
+   "arg": "generator",
+   "extra": "Generator",
+   "f": 1137
+  },
+  {
+   "type": "shot",
+   "arg": "trafo",
+   "extra": "36",
+   "f": 1290
+  },
+  {
+   "type": "hl",
+   "arg": "trafo",
+   "f": 1296
+  },
+  {
+   "type": "label",
+   "arg": "trafo",
+   "extra": "Transformator",
+   "f": 1303
+  },
+  {
+   "type": "shot",
+   "arg": "turm",
+   "extra": "50",
+   "f": 1357
+  },
+  {
+   "type": "hl",
+   "arg": "kabel",
+   "f": 1363
+  },
+  {
+   "type": "xturm",
+   "arg": "on",
+   "f": 1363
+  },
+  {
+   "type": "fx",
+   "arg": "strom",
+   "f": 1363
+  },
+  {
+   "type": "shot",
+   "arg": "netz",
+   "extra": "55",
+   "f": 1429
+  },
+  {
+   "type": "hl",
+   "arg": "-",
+   "f": 1435
+  },
+  {
+   "type": "fx",
+   "arg": "netz",
+   "f": 1435
+  },
+  {
+   "type": "shot",
+   "arg": "wide",
+   "extra": "55",
+   "f": 1505
+  },
+  {
+   "type": "xray",
+   "arg": "off",
+   "f": 1511
+  },
+  {
+   "type": "xturm",
+   "arg": "off",
+   "f": 1511
+  },
+  {
+   "type": "card",
+   "arg": "1 Umdrehung",
+   "extra": "≈ 1 Tag Strom für einen Haushalt",
+   "f": 1567
+  },
+  {
+   "type": "shot",
+   "arg": "tip",
+   "extra": "70",
+   "f": 1717
+  },
+  {
+   "type": "card",
+   "arg": "-",
+   "f": 1723
+  },
+  {
+   "type": "speed",
+   "arg": "on",
+   "f": 1723
+  },
+  {
+   "type": "card",
+   "arg": "≈ 300 km/h",
+   "extra": "an der Flügelspitze",
+   "f": 1849
+  }
+ ],
+ "acts": [
+  {
+   "name": "hook",
+   "from": 0,
+   "to": 285
+  },
+  {
+   "name": "aussen",
+   "from": 285,
+   "to": 730
+  },
+  {
+   "name": "rein",
+   "from": 730,
+   "to": 774
+  },
+  {
+   "name": "schritte",
+   "from": 774,
+   "to": 1511
+  },
+  {
+   "name": "aha",
+   "from": 1511,
+   "to": 1723
+  },
+  {
+   "name": "loop",
+   "from": 1723,
+   "to": 1872
+  }
+ ],
+ "sfx": [
+  {
+   "src": "sfx/wind.mp3",
+   "from": 0,
+   "volume": 0.16
+  },
+  {
+   "src": "sfx/wind.mp3",
+   "from": 570,
+   "volume": 0.16
+  },
+  {
+   "src": "sfx/wind.mp3",
+   "from": 1140,
+   "volume": 0.16
+  },
+  {
+   "src": "sfx/wind.mp3",
+   "from": 1710,
+   "volume": 0.16
+  },
+  {
+   "src": "sfx/hum.mp3",
+   "from": 730,
+   "volume": 0.22,
+   "dur": 600
+  },
+  {
+   "src": "sfx/hum.mp3",
+   "from": 1330,
+   "volume": 0.22,
+   "dur": 181
+  },
+  {
+   "src": "sfx/buzz.mp3",
+   "from": 1100,
+   "volume": 0.1,
+   "dur": 411
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 138,
+   "volume": 0.3
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 275,
+   "volume": 0.3
+  },
+  {
+   "src": "sfx/tick.mp3",
+   "from": 309,
+   "volume": 0.35
+  },
+  {
+   "src": "sfx/tick.mp3",
+   "from": 388,
+   "volume": 0.35
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 401,
+   "volume": 0.3
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 720,
+   "volume": 0.3
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 764,
+   "volume": 0.15
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 910,
+   "volume": 0.15
+  },
+  {
+   "src": "sfx/tick.mp3",
+   "from": 987,
+   "volume": 0.35
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 1090,
+   "volume": 0.15
+  },
+  {
+   "src": "sfx/tick.mp3",
+   "from": 1137,
+   "volume": 0.35
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 1286,
+   "volume": 0.15
+  },
+  {
+   "src": "sfx/tick.mp3",
+   "from": 1303,
+   "volume": 0.35
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 1353,
+   "volume": 0.3
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 1425,
+   "volume": 0.3
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 1501,
+   "volume": 0.3
+  },
+  {
+   "src": "sfx/pop.mp3",
+   "from": 1567,
+   "volume": 0.45
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 1713,
+   "volume": 0.3
+  },
+  {
+   "src": "sfx/pop.mp3",
+   "from": 1849,
+   "volume": 0.45
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 52,
+   "volume": 0.22
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 113,
+   "volume": 0.22
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 1743,
+   "volume": 0.22
+  },
+  {
+   "src": "sfx/whoosh.mp3",
+   "from": 1804,
+   "volume": 0.22
+  }
+ ]
+}
