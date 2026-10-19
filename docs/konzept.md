@@ -10,13 +10,13 @@ Vollautomatisierte TikTok-Erklärvideos: 4 Videos am Tag, je 62–75 s, Low-Poly
 | 2 | Länge | 62–75 s (sicher über 1 min für Creator Rewards) |
 | 3 | Kanal | Neuer eigener Kanal |
 | 4 | Name | „Wie funktioniert eigentlich…?“ |
-| 5 | Grundlook | Low-Poly-3D, dazu eigene Vorschläge unabhängig von Simplicissimus → 3 Looks, siehe `docs/design-system.md` |
-| 6 | Farben | Warm & gedämpft (Look „Diorama“) |
+| 5 | Grundlook | 3D, nach dem ersten Prototyp: **Nachtschicht**, detailreicher und realistischer, schnellere Animationen (Update 19.10.) |
+| 6 | Farben | **Kein Orange.** Palette aus dem Orchideen-Moodboard: Petrol `#6CB2B3`, Bordeaux `#4A292F`, Altrosa `#EEAEAF`, Salbei `#C9D1CA` (Update 19.10.) |
 | 7 | Innenleben | Werkzeugkasten: Schnitt, Röntgen, Explosion je nach Szene |
 | 8 | Figuren | Einfache gesichtslose Figuren |
 | 9 | Untertitel | Wort für Wort, aktives Wort in Akzentfarbe, 2–4 Wörter |
 | 10 | Labels | Wichtige Teile werden farblich hervorgehoben. Labels nur, wenn sie fürs Verstehen relevant sind |
-| 11 | Schrift | Claude entscheidet: Manrope (Untertitel) + Fraunces (Zahlen) im Diorama-Look |
+| 11 | Schrift | Claude entscheidet: Space Grotesk 700 (Untertitel und Zahlen) |
 | 12 | Hook | Verblüffende Zahl in den ersten 2 Sekunden |
 | 13 | Ton | Ruhig, aber nicht trocken: du-Ansprache, Alltagsvergleiche, kurze Sätze, 1–2 Aha-Momente |
 | 14 | Tempo | Adam ~1.08x (ElevenLabs-Parameter `speed`, Wort-Timings bleiben exakt) |
@@ -50,6 +50,5 @@ Optional für die Stil-Recherche: `www.youtube.com`, `i.ytimg.com`, `*.googlevid
 
 ## Offene Punkte
 
-- Look final wählen (Diorama / Nachtschicht / Knete), siehe Style-Frames
 - Windrad-Skript freigeben (Fakten mit Quellen in `content/topics/windrad.json`)
 - Nach Freigabe: Adam-Vertonung durch den Partner (`docs/vertonung.md`), dann Themen 2–5 als Serie

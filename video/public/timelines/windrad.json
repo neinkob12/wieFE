@@ -4,7 +4,7 @@
  "title": "Wie funktioniert eigentlich ein Windrad?",
  "fps": 30,
  "durationInFrames": 1872,
- "look": "diorama",
+ "look": "nacht",
  "draftVoice": true,
  "voice": [
   {
@@ -1094,7 +1094,7 @@
   {
    "type": "shot",
    "arg": "wide",
-   "extra": "55",
+   "extra": "34",
    "f": 142
   },
   {
@@ -1110,7 +1110,7 @@
   {
    "type": "shot",
    "arg": "hoehe",
-   "extra": "50",
+   "extra": "32",
    "f": 279
   },
   {
@@ -1138,7 +1138,7 @@
   {
    "type": "shot",
    "arg": "blatt",
-   "extra": "50",
+   "extra": "30",
    "f": 405
   },
   {
@@ -1164,7 +1164,7 @@
   {
    "type": "shot",
    "arg": "gondel",
-   "extra": "50",
+   "extra": "30",
    "f": 724
   },
   {
@@ -1185,7 +1185,7 @@
   {
    "type": "shot",
    "arg": "welle",
-   "extra": "40",
+   "extra": "24",
    "f": 768
   },
   {
@@ -1196,7 +1196,7 @@
   {
    "type": "shot",
    "arg": "getriebe",
-   "extra": "36",
+   "extra": "22",
    "f": 914
   },
   {
@@ -1213,7 +1213,7 @@
   {
    "type": "shot",
    "arg": "generator",
-   "extra": "36",
+   "extra": "22",
    "f": 1094
   },
   {
@@ -1235,7 +1235,7 @@
   {
    "type": "shot",
    "arg": "trafo",
-   "extra": "36",
+   "extra": "22",
    "f": 1290
   },
   {
@@ -1252,7 +1252,7 @@
   {
    "type": "shot",
    "arg": "turm",
-   "extra": "50",
+   "extra": "30",
    "f": 1357
   },
   {
@@ -1273,7 +1273,7 @@
   {
    "type": "shot",
    "arg": "netz",
-   "extra": "55",
+   "extra": "32",
    "f": 1429
   },
   {
@@ -1289,7 +1289,7 @@
   {
    "type": "shot",
    "arg": "wide",
-   "extra": "55",
+   "extra": "34",
    "f": 1505
   },
   {
@@ -1311,7 +1311,7 @@
   {
    "type": "shot",
    "arg": "tip",
-   "extra": "70",
+   "extra": "40",
    "f": 1717
   },
   {

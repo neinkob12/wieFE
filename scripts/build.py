@@ -253,7 +253,7 @@ def build(vid, engine):
         if c["f"] == 0:
             continue
         if c["type"] == "shot":
-            sfx.append({"src": "sfx/whoosh.mp3", "from": max(0, c["f"] - 4), "volume": 0.3 if int(c.get("extra") or 36) > 40 else 0.15})
+            sfx.append({"src": "sfx/whoosh.mp3", "from": max(0, c["f"] - 4), "volume": 0.3 if int(c.get("extra") or 26) > 28 else 0.15})
         elif c["type"] == "card" and c["arg"] != "-":
             sfx.append({"src": "sfx/pop.mp3", "from": c["f"], "volume": 0.45})
         elif c["type"] == "label":

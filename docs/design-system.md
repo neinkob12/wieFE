@@ -46,24 +46,35 @@ Die Bibliothek in `kit/parts.tsx` wächst mit jedem Thema (Zahnrad, Rohr, Kabel,
 
 Alle Szenen benutzen nur Farb-Rollen (`ground`, `object`, `accent`, `energy` …). Ein Look ist eine Palette plus Licht und Materialregeln in `video/src/kit/theme.ts`. Ein Look-Wechsel ist ein Parameter, kein neues Rendering-Setup.
 
-| Look | Idee | Farben | Material/Licht | Schrift |
-|---|---|---|---|---|
-| **Diorama** (gewählt) | Warm & gedämpft, Welt als Insel mit Erdschichten | Sand `#E4D6BF`, Wiese `#5E8C76`, Creme `#F4EFE6`, Tinte `#2B2A33`, Akzent Orange `#E8743B`, Energie `#F2C14E` | Flat-Shading (Low-Poly-Facetten), matt, warme Sonne, statische Papier-Körnung | Manrope 800 + Fraunces 900 |
-| **Nachtschicht** (Vorschlag) | Dunkle Bühne, Technik wird zur Lichtspur. Laut Recherche näher an Simplicissimus | Nachtblau `#0B1424`, Stahl `#D8E3EF`, Akzent `#FF8A3D`, Energie Cyan `#5CE1FF` | Kühles Licht, Energie leuchtet (additiver Schein), starke Vignette | Space Grotesk |
-| **Knete** (Vorschlag) | Weiches Spielzeug-Diorama in Pastell | Himmel `#BFE3F2`, Mint `#A8DDB5`, Akzent Pink `#FF6F91`, Gelb `#FFC94A` | Weich schattiert, viel Umgebungslicht, kaum Körnung | Nunito 900 |
+**Gewählt: Nachtschicht × Orchidee** (Update 19.10.: kein Orange mehr, Palette aus dem Orchideen-Moodboard)
+
+| Rolle | Farbe | Einsatz |
+|---|---|---|
+| Petrol | `#6CB2B3` | Licht von oben, Glas/Röntgen, Basis für den Strom (`#7ED9D6` leuchtend) |
+| Bordeaux | `#4A292F` | Karten, Dächer, Horizont-Dämmerung (`#2A1C24`) |
+| Altrosa | `#EEAEAF` | Akzent in Untertiteln, Karten, Labels |
+| Rosa kräftig | `#E27886` | Hervorhebung in 3D (Altrosa ist auf Salbei zu blass) |
+| Salbei | `#C9D1CA` | Windrad und Technik, Nebentext |
+| Blütenrot | `#C2525F` | Rote Tagesmarkierung (Flügelspitzen, Turmring), Magnet-Nordpol |
+| Nacht | `#081214` → `#13262B` | Himmel (Kuppel mit Sternen), Boden `#1B3335` |
+
+Material/Licht: glatt schattiert, Umgebungsreflexionen (Metall glänzt), Mondlicht + Gegenlicht in Petrol, weiche Schatten, Energie und Fenster leuchten (additiver Schein), Vignette. Schrift: Space Grotesk 700.
+
+Verworfen, aber als Parameter noch vorhanden: Diorama (warm, Orange) und Knete (Pastell).
 
 Style-Frames: `docs/design/styleframes/`.
 
 ## Regeln
 
-- **Ein Akzent pro Moment.** Nur das Teil, über das gerade gesprochen wird, ist orange. Alles andere bleibt ruhig.
-- **Abstrakt statt detailliert.** Ein Getriebe besteht aus zwei Zahnradpaaren, nicht aus 40 Teilen. Proportionen dürfen für die Lesbarkeit übertrieben sein (die Gondel ist ca. 1,5x zu groß).
-- **Kamera bewegt sich immer.** Leichtes Atmen plus langsame Orbits, Übergänge mit Ease-in-out. Das Atmen ist periodisch über die Videolänge, damit der Loop nahtlos bleibt.
+- **Ein Akzent pro Moment.** Nur das Teil, über das gerade gesprochen wird, leuchtet rosa. Alles andere bleibt ruhig.
+- **Realistisch, aber aufgeräumt.** Echte Bauteile und Details, die man wiedererkennt (Profil-Flügel mit Tagesmarkierung, Planetengetriebe, Bremsscheibe, Hindernisfeuer, Gittermasten), aber keine 40 Schrauben. Proportionen dürfen für die Lesbarkeit übertrieben sein (die Gondel ist ca. 1,5x zu groß).
+- **Tempo.** Kamerafahrten 0,7–1,1 s, jede Einstellung fährt langsam heran (Push-in), Hervorhebungen blenden in 5 Frames ein.
+- **Kamera bewegt sich immer.** Leichtes Atmen, Push-in und Orbits, Übergänge mit Ease-in-out. Das Atmen ist periodisch über die Videolänge, damit der Loop nahtlos bleibt.
 - **Größenvergleiche mit Bekanntem.** Kölner Dom, Fußballfeld, Badewanne, ICE.
 - **Figuren ohne Gesicht** (Kapsel + Kugel) für Maßstab und Alltagsbezug.
 - **Safe-Zones 1080×1920:** oben 220 px, unten 420 px, rechts 140 px frei (TikTok-Bedienelemente). Untertitel sitzen knapp über der unteren Zone, Karten unter der oberen.
-- **Untertitel:** 2–4 Wörter, Manrope 800 / 78 px, Tinten-Kontur, aktives Wort in Akzentfarbe mit kleinem Pop.
-- **Loop:** Der Rotor dreht sich so, dass nach der Videolänge genau eine Drittel-Umdrehung erreicht ist. Wolken und Kamera-Atmen sind periodisch. Karte und Kamera stehen im letzten Frame wie im ersten.
+- **Untertitel:** 2–4 Wörter, Space Grotesk 700 / 78 px, dunkle Kontur, aktives Wort in Altrosa mit kleinem Pop.
+- **Loop:** Der Rotor dreht sich so, dass nach der Videolänge genau eine Drittel-Umdrehung erreicht ist. Wolken und Kamera-Atmen sind periodisch. Blinklichter und Autos laufen in einem Takt, der genau in die Videolänge passt. Karte und Kamera stehen im letzten Frame wie im ersten.
 
 ## Sound
 

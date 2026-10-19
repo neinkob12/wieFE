@@ -22,7 +22,8 @@ export type Timeline = {
 };
 
 export type V3 = [number, number, number];
-export type Shot = {pos: V3; target: V3; fov?: number; orbit?: number; dur?: number};
+// orbit: Grad/s um das Ziel; push: Anteil der Distanz pro Sekunde, um den die Kamera langsam heranfaehrt (max. 18 %)
+export type Shot = {pos: V3; target: V3; fov?: number; orbit?: number; push?: number; dur?: number};
 export type Topic = {
 	id: string;
 	shots: Record<string, Shot>;
@@ -59,7 +60,7 @@ export const toggle = (tl: Timeline, type: string, f: number, fade = 15) => {
 };
 
 // Hervorhebung: [hl:teil] gilt bis zum naechsten [hl:...]
-export const highlight = (tl: Timeline, part: string, f: number, fade = 8) => {
+export const highlight = (tl: Timeline, part: string, f: number, fade = 5) => {
 	const hs = cuesOf(tl, 'hl');
 	let v = 0;
 	for (let i = 0; i < hs.length; i++) {
@@ -78,6 +79,9 @@ export const anyHighlight = (tl: Timeline, f: number) => {
 	return hs.length > 0 && hs[hs.length - 1].arg !== '-';
 };
 
+// Takt, der genau in die Videolaenge passt (Blinklichter, Autos ...), damit der Loop nahtlos bleibt
+export const loopPeriod = (tl: Timeline, target: number) => tl.durationInFrames / Math.max(1, Math.round(tl.durationInFrames / target));
+
 // Seit wann laeuft ein Effekt [fx:name], in Frames (negativ = noch nicht)
 export const since = (tl: Timeline, name: string, f: number) => f - cueFrame(tl, 'fx', name);
 
@@ -93,6 +97,7 @@ const shotPose = (shot: Shot, t: number, fps: number): Pose => {
 		const dz = pos[2] - shot.target[2];
 		pos = [shot.target[0] + dx * Math.cos(a) - dz * Math.sin(a), pos[1], shot.target[2] + dx * Math.sin(a) + dz * Math.cos(a)];
 	}
+	if (shot.push) pos = lerp3(pos, shot.target, Math.min(0.18, shot.push * (t / fps)));
 	return {pos, target: shot.target, fov: shot.fov ?? DEFAULT_FOV};
 };
 
@@ -104,7 +109,7 @@ export const cameraAt = (tl: Timeline, topic: Topic, f: number): Pose => {
 	for (const c of cues) {
 		if (c.f > f) break;
 		const shot = topic.shots[c.arg];
-		const dur = Number(c.extra) || shot.dur || 36;
+		const dur = Number(c.extra) || shot.dur || 26;
 		const from = shotPose(prevShot, c.f - prevStart, tl.fps);
 		const to = shotPose(shot, f - c.f, tl.fps);
 		const p = ease((f - c.f) / dur);

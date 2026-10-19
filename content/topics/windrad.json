@@ -2,17 +2,17 @@
  "id": "windrad",
  "topic": "windrad",
  "title": "Wie funktioniert eigentlich ein Windrad?",
- "look": "diorama",
+ "look": "nacht",
  "status": "Entwurf, wartet auf Freigabe",
  "caption": "Rund 300 km/h an der Flügelspitze – und trotzdem sieht ein Windrad von unten ganz gemütlich aus. So wird aus Wind Strom. 🌬️⚡",
  "hashtags": ["#wiefunktioniertdas", "#windrad", "#windenergie", "#strom", "#technik", "#lernenmittiktok", "#erklärt"],
  "acts": [
-  {"name": "hook", "text": "[shot:tip][speed:on][card:≈ 300 km/h|an der Flügelspitze] Rund {300|dreihundert} Kilometer pro Stunde. So schnell rast die Spitze dieses Flügels durch die Luft. [card:-][speed:off][shot:wide|55] Von unten sieht das ganz gemütlich aus. Aber wie macht so ein Windrad eigentlich Strom?"},
-  {"name": "aussen", "text": "[shot:hoehe|50][mass:on] Die Nabe sitzt [label:nabe|150 m] rund {150|hundertfünfzig} Meter hoch, [dom:on] fast so hoch wie der [label:dom|Kölner Dom · 157 m|rd] Kölner Dom. [mass:off][dom:off][shot:blatt|50][wind:on][hl:blatt] Die Flügel sind geformt wie die Tragfläche eines Flugzeugs. Auf der gewölbten Seite strömt die Luft schneller vorbei, dort entsteht ein Sog. Der zieht den Flügel zur Seite, und der Rotor dreht sich."},
-  {"name": "rein", "text": "[hl:-][wind:off][shot:gondel|50][xray:on] Schauen wir mal rein."},
-  {"name": "schritte", "text": "[shot:welle|40][hl:welle] Der Rotor dreht sich nur etwa zehnmal pro Minute. Für Strom ist das viel zu langsam. [shot:getriebe|36][hl:getriebe] Darum sitzt bei vielen Windrädern dahinter ein [label:getriebe|Getriebe] Getriebe. Aus einer langsamen Umdrehung macht es rund hundert schnelle. [shot:generator|36][hl:generator+welle2][fx:generator] Die schnelle Welle dreht den [label:generator|Generator] Generator. Darin sausen Magnete an Kupferspulen vorbei, und das schubst Strom durch die Drähte. [shot:trafo|36][hl:trafo] Ein [label:trafo|Transformator] Transformator macht die Spannung hoch. [shot:turm|50][hl:kabel][xturm:on][fx:strom] Dann fließt der Strom durchs Kabel den Turm hinunter [shot:netz|55][hl:-][fx:netz] und ab ins Netz. Bis in deine Steckdose."},
-  {"name": "aha", "text": "[xray:off][xturm:off][shot:wide|55] Und jetzt kommt's: Bei vollem Wind liefert [card:1 Umdrehung|≈ 1 Tag Strom für einen Haushalt] eine einzige Umdrehung ungefähr so viel Strom, wie ein Haushalt an einem ganzen Tag verbraucht."},
-  {"name": "loop", "text": "[card:-][shot:tip|70][speed:on] Und das alles mit einem Rotor, der von unten ganz gemütlich aussieht. Aber an der [card:≈ 300 km/h|an der Flügelspitze] Spitze sind es"}
+  {"name": "hook", "text": "[shot:tip][speed:on][card:≈ 300 km/h|an der Flügelspitze] Rund {300|dreihundert} Kilometer pro Stunde. So schnell rast die Spitze dieses Flügels durch die Luft. [card:-][speed:off][shot:wide|34] Von unten sieht das ganz gemütlich aus. Aber wie macht so ein Windrad eigentlich Strom?"},
+  {"name": "aussen", "text": "[shot:hoehe|32][mass:on] Die Nabe sitzt [label:nabe|150 m] rund {150|hundertfünfzig} Meter hoch, [dom:on] fast so hoch wie der [label:dom|Kölner Dom · 157 m|rd] Kölner Dom. [mass:off][dom:off][shot:blatt|30][wind:on][hl:blatt] Die Flügel sind geformt wie die Tragfläche eines Flugzeugs. Auf der gewölbten Seite strömt die Luft schneller vorbei, dort entsteht ein Sog. Der zieht den Flügel zur Seite, und der Rotor dreht sich."},
+  {"name": "rein", "text": "[hl:-][wind:off][shot:gondel|30][xray:on] Schauen wir mal rein."},
+  {"name": "schritte", "text": "[shot:welle|24][hl:welle] Der Rotor dreht sich nur etwa zehnmal pro Minute. Für Strom ist das viel zu langsam. [shot:getriebe|22][hl:getriebe] Darum sitzt bei vielen Windrädern dahinter ein [label:getriebe|Getriebe] Getriebe. Aus einer langsamen Umdrehung macht es rund hundert schnelle. [shot:generator|22][hl:generator+welle2][fx:generator] Die schnelle Welle dreht den [label:generator|Generator] Generator. Darin sausen Magnete an Kupferspulen vorbei, und das schubst Strom durch die Drähte. [shot:trafo|22][hl:trafo] Ein [label:trafo|Transformator] Transformator macht die Spannung hoch. [shot:turm|30][hl:kabel][xturm:on][fx:strom] Dann fließt der Strom durchs Kabel den Turm hinunter [shot:netz|32][hl:-][fx:netz] und ab ins Netz. Bis in deine Steckdose."},
+  {"name": "aha", "text": "[xray:off][xturm:off][shot:wide|34] Und jetzt kommt's: Bei vollem Wind liefert [card:1 Umdrehung|≈ 1 Tag Strom für einen Haushalt] eine einzige Umdrehung ungefähr so viel Strom, wie ein Haushalt an einem ganzen Tag verbraucht."},
+  {"name": "loop", "text": "[card:-][shot:tip|40][speed:on] Und das alles mit einem Rotor, der von unten ganz gemütlich aussieht. Aber an der [card:≈ 300 km/h|an der Flügelspitze] Spitze sind es"}
  ],
  "facts": [
   {"claim": "Flügelspitze rund 300 km/h", "value": "290–330 km/h (E-160 9,6 U/min, N163 10,4 U/min, V162 10 U/min)", "source": "Enercon E-160 GDC; Nordex N163/5.X Technische Beschreibung; wind-turbine-models.com"},
