@@ -3,8 +3,8 @@
 import React, {useMemo} from 'react';
 import * as THREE from 'three';
 import {random} from 'remotion';
-import {clamp01, easeOut, highlight, since, toggle, useScene, type Topic, type V3} from '../kit/core';
-import {Cloud, Figure, Flow, Forest, Glow, gearGeometry, Hill, House, Island, Lights, Mat, Pylon, Wire, XrayEdges} from '../kit/parts';
+import {clamp01, easeOut, since, toggle, useScene, type Topic, type V3} from '../kit/core';
+import {Cloud, Figure, Flow, Forest, gearGeometry, Hill, House, Island, Lights, Mat, Pylon, Swarm, Wire, XrayEdges} from '../kit/parts';
 
 const HUB: V3 = [0, 15, 1.45];
 const NAC_Y = 15;
@@ -302,23 +302,19 @@ const Wind: React.FC = () => {
 	const {tl, f, look} = useScene();
 	const k = toggle(tl, 'wind', f, 15);
 	if (k <= 0.01) return null;
+	const streaks = Array.from({length: 46}).map((_, i) => {
+		const x = (random(`wx${i}`) - 0.5) * 18;
+		const y = 6 + random(`wy${i}`) * 18;
+		const z = 16 - ((random(`wz${i}`) * 26 + f * 0.32) % 26);
+		const near = Math.max(0, 1 - Math.abs(z - HUB[2]) / 4);
+		const bend = Math.hypot(x, y - HUB[1]) < BLADE_LEN ? near * 0.5 : 0;
+		return {p: [x + Math.sign(x || 1) * bend, y, z] as V3, s: 1};
+	});
 	return (
-		<group>
-			{Array.from({length: 46}).map((_, i) => {
-				const x = (random(`wx${i}`) - 0.5) * 18;
-				const y = 6 + random(`wy${i}`) * 18;
-				const z = 16 - ((random(`wz${i}`) * 26 + f * 0.32) % 26);
-				const near = Math.max(0, 1 - Math.abs(z - HUB[2]) / 4);
-				const r = Math.hypot(x, y - HUB[1]);
-				const bend = r < BLADE_LEN ? near * 0.5 : 0;
-				return (
-					<mesh key={i} position={[x + Math.sign(x || 1) * bend, y, z]}>
-						<boxGeometry args={[0.06, 0.06, 2.2]} />
-						<meshBasicMaterial color={look.air} transparent opacity={0.85 * k} />
-					</mesh>
-				);
-			})}
-		</group>
+		<Swarm items={streaks} max={46}>
+			<boxGeometry args={[0.06, 0.06, 2.2]} />
+			<meshBasicMaterial color={look.air} transparent opacity={0.85 * k} />
+		</Swarm>
 	);
 };
 

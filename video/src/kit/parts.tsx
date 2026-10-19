@@ -1,6 +1,6 @@
 // Wiederverwendbare 3D-Bausteine: Material mit Hervorhebung/Roentgen, Welt (Insel, Huegel, Baeume, Wolken),
 // Figuren, Haeuser, Strommasten, Energie-Fluss. Neue Themen setzen sich zum groessten Teil hieraus zusammen.
-import React, {useMemo} from 'react';
+import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import * as THREE from 'three';
 import {random} from 'remotion';
 import {highlight, toggle, useScene, type V3} from './core';
@@ -133,17 +133,63 @@ export const Tree: React.FC<{p: V3; s?: number; alt?: boolean}> = ({p, s = 1, al
 	);
 };
 
+// Instancing: viele gleiche Teile in einem Zeichenaufruf (auf der CPU-Grafik der groesste Zeitgewinn)
+const M4 = new THREE.Matrix4();
+const Q0 = new THREE.Quaternion();
+const C0 = new THREE.Color();
+type Inst = {p: V3; s: number | V3; color?: string};
+const useInstances = (ref: React.RefObject<THREE.InstancedMesh>, items: Inst[]) => {
+	useLayoutEffect(() => {
+		const mesh = ref.current;
+		if (!mesh) return;
+		items.forEach((it, i) => {
+			const s = typeof it.s === 'number' ? [it.s, it.s, it.s] : it.s;
+			M4.compose(new THREE.Vector3(...it.p), Q0, new THREE.Vector3(...s));
+			mesh.setMatrixAt(i, M4);
+			if (it.color) mesh.setColorAt(i, C0.set(it.color));
+		});
+		mesh.count = items.length;
+		mesh.instanceMatrix.needsUpdate = true;
+		if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
+	});
+};
+
 // Waldstueck aus zufaellig verteilten Baeumen (deterministisch per seed)
-export const Forest: React.FC<{c: V3; r: number; n: number; seed: string}> = ({c, r, n, seed}) => (
-	<group>
-		{Array.from({length: n}).map((_, i) => {
-			const a = random(`${seed}a${i}`) * Math.PI * 2;
-			const d = Math.sqrt(random(`${seed}d${i}`)) * r;
-			const s = 0.7 + random(`${seed}s${i}`) * 0.7;
-			return <Tree key={i} p={[c[0] + Math.cos(a) * d, c[1], c[2] + Math.sin(a) * d]} s={s} alt={random(`${seed}t${i}`) > 0.5} />;
-		})}
-	</group>
-);
+export const Forest: React.FC<{c: V3; r: number; n: number; seed: string}> = ({c, r, n, seed}) => {
+	const {look} = useScene();
+	const trunks = useRef<THREE.InstancedMesh>(null);
+	const crowns = useRef<THREE.InstancedMesh>(null);
+	const trees = Array.from({length: n}).map((_, i) => {
+		const a = random(`${seed}a${i}`) * Math.PI * 2;
+		const d = Math.sqrt(random(`${seed}d${i}`)) * r;
+		return {x: c[0] + Math.cos(a) * d, z: c[2] + Math.sin(a) * d, s: 0.7 + random(`${seed}s${i}`) * 0.7, alt: random(`${seed}t${i}`) > 0.5};
+	});
+	useInstances(trunks, trees.map((t) => ({p: [t.x, c[1] + 0.25 * t.s, t.z], s: t.s})));
+	useInstances(crowns, trees.map((t) => ({p: [t.x, c[1] + 1.05 * t.s, t.z], s: t.s, color: t.alt ? look.treeAlt : look.tree})));
+	return (
+		<group>
+			<instancedMesh ref={trunks} args={[undefined, undefined, n]} castShadow frustumCulled={false}>
+				<cylinderGeometry args={[0.08, 0.1, 0.5, 5]} />
+				<meshStandardMaterial color={look.earthDark} flatShading={look.flat} roughness={look.roughness} />
+			</instancedMesh>
+			<instancedMesh ref={crowns} args={[undefined, undefined, n]} castShadow frustumCulled={false}>
+				<coneGeometry args={[0.55, 1.5, 6]} />
+				<meshStandardMaterial color="#ffffff" flatShading={look.flat} roughness={look.roughness} />
+			</instancedMesh>
+		</group>
+	);
+};
+
+// Viele gleiche Kleinteile (Windstreifen, Tropfen, Funken) als ein Instanz-Mesh
+export const Swarm: React.FC<{items: Inst[]; max: number; children: React.ReactNode}> = ({items, max, children}) => {
+	const ref = useRef<THREE.InstancedMesh>(null);
+	useInstances(ref, items);
+	return (
+		<instancedMesh ref={ref} args={[undefined, undefined, max]} frustumCulled={false}>
+			{children}
+		</instancedMesh>
+	);
+};
 
 // Wolke aus Low-Poly-Kugeln, pendelt langsam (periodisch ueber die Videolaenge)
 export const Cloud: React.FC<{p: V3; s?: number; seed: string}> = ({p, s = 1, seed}) => {
@@ -241,7 +287,7 @@ export const Wire: React.FC<{a: V3; b: V3; sag?: number; c?: string}> = ({a, b, 
 		const mid = new THREE.Vector3((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 - sag, (a[2] + b[2]) / 2);
 		const curve = new THREE.QuadraticBezierCurve3(new THREE.Vector3(...a), mid, new THREE.Vector3(...b));
 		return new THREE.TubeGeometry(curve, 16, 0.025, 4, false);
-	}, [a, b, sag]);
+	}, [a.join(), b.join(), sag]); // eslint-disable-line react-hooks/exhaustive-deps
 	return (
 		<mesh geometry={geo}>
 			<Mat c={c ?? look.dark} />
@@ -256,28 +302,25 @@ export const Flow: React.FC<{points: V3[]; head: number; n?: number; speed?: num
 	const {f, look} = useScene();
 	const curve = useMemo(() => new THREE.CatmullRomCurve3(points.map((p) => new THREE.Vector3(...p)), false, 'catmullrom', 0.2), [points]);
 	if (head <= 0) return null;
+	const dots: Inst[] = [];
+	for (let i = 0; i < n; i++) {
+		const u = (i / n + f * speed) % 1;
+		if (u > head) continue;
+		const p = curve.getPointAt(u);
+		dots.push({p: [p.x, p.y, p.z], s: size * Math.min(1, (head - u) * 20)});
+	}
 	return (
 		<group>
-			{Array.from({length: n}).map((_, i) => {
-				const u = (i / n + f * speed) % 1;
-				if (u > head) return null;
-				const p = curve.getPointAt(u);
-				const fade = Math.min(1, (head - u) * 20);
-				return (
-					<group key={i} position={p}>
-						<mesh scale={size * fade}>
-							<icosahedronGeometry args={[1, 0]} />
-							<Glow c={c} />
-						</mesh>
-						{look.glow ? (
-							<mesh scale={size * 2.6 * fade}>
-								<sphereGeometry args={[1, 8, 6]} />
-								<meshBasicMaterial color={c ?? look.energy} transparent opacity={0.18} blending={THREE.AdditiveBlending} depthWrite={false} />
-							</mesh>
-						) : null}
-					</group>
-				);
-			})}
+			<Swarm items={dots} max={n}>
+				<icosahedronGeometry args={[1, 0]} />
+				<Glow c={c} />
+			</Swarm>
+			{look.glow ? (
+				<Swarm items={dots.map((d) => ({p: d.p, s: (d.s as number) * 2.6}))} max={n}>
+					<sphereGeometry args={[1, 8, 6]} />
+					<meshBasicMaterial color={c ?? look.energy} transparent opacity={0.18} blending={THREE.AdditiveBlending} depthWrite={false} />
+				</Swarm>
+			) : null}
 		</group>
 	);
 };
