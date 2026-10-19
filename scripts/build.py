@@ -286,6 +286,9 @@ def build(vid, engine):
     print(f"{vid}: {total / FPS:.1f} s, {len(words)} Woerter, Stimme: {engine}")
     for a in acts:
         print(f"  {a['name']:9s} {a['from'] / FPS:5.1f} - {a['to'] / FPS:5.1f} s")
+    if engine == "adam":
+        print(f"\nJetzt hochladen:\n  git add video/public/audio/{vid} video/public/timelines/{vid}.json\n"
+              f"  git commit -m \"Adam-Vertonung {vid}\" && git push")
 
 
 if __name__ == "__main__":

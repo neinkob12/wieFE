@@ -40,16 +40,16 @@ TikTok zahlt über Creator Rewards nur für Originalinhalte über 1 Minute. Wir 
 
 4 Videos × 30 Tage ≈ 120 Videos × ca. 1.100 Zeichen ≈ **130k Zeichen/Monat**. Der Creator-Plan hat 100k. Optionen: Pro-Plan, Zusatz-Credits oder 3 Videos am Tag. Die Pipeline vertont jeden Satz einzeln und cacht ihn. Bei Korrekturen kostet nur der geänderte Satz neue Zeichen.
 
-## Was in der Cloud-Umgebung noch fehlt
+## Arbeitsteilung Stimme / Render
 
-- `ELEVENLABS_API_KEY` als Umgebungsvariable (Umgebungsmenü → Edit)
-- `api.elevenlabs.io` unter Network access → Allowed domains (blockiert sonst, auch mit Key)
-- Für Stil-Recherche optional: `www.youtube.com`, `i.ytimg.com`, `*.googlevideo.com`
+Die Cloud-Umgebung kommt nicht an `api.elevenlabs.io`. Deshalb vertont euer Partner lokal am Mac mit Adam (ein Befehl, Anleitung in `docs/vertonung.md`) und pusht die Audiodateien samt Timeline. Claude rendert danach in der Cloud. Der ElevenLabs-Key bleibt auf dem Rechner des Partners.
 
-Bis dahin rendert die Pipeline mit einer Platzhalterstimme (Piper „Thorsten“, offline), im Video oben links als ENTWURF markiert.
+Bis dahin rendert die Pipeline mit einer Platzhalterstimme (Piper „Thorsten“, offline), im Video oben links als ENTWURF markiert. Die Platzhalter-Dateien werden nicht eingecheckt.
+
+Optional für die Stil-Recherche: `www.youtube.com`, `i.ytimg.com`, `*.googlevideo.com` in der Cloud-Umgebung erlauben.
 
 ## Offene Punkte
 
 - Look final wählen (Diorama / Nachtschicht / Knete), siehe Style-Frames
 - Windrad-Skript freigeben (Fakten mit Quellen in `content/topics/windrad.json`)
-- Nach Freigabe: Adam-Vertonung, dann Themen 2–5 als Serie
+- Nach Freigabe: Adam-Vertonung durch den Partner (`docs/vertonung.md`), dann Themen 2–5 als Serie

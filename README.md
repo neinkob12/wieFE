@@ -5,6 +5,7 @@ Vollautomatisierte TikTok-Erklärvideos (Deutsch, 62–75 s, 1080×1920): Low-Po
 - Konzept und die 25 Entscheidungen: [docs/konzept.md](docs/konzept.md)
 - Design-System, Regie-Tags und Looks: [docs/design-system.md](docs/design-system.md)
 - Themen-Backlog: [docs/themen.md](docs/themen.md)
+- Vertonung mit Adam (lokal, Anleitung für den Partner): [docs/vertonung.md](docs/vertonung.md)
 - Style-Frames (JPG): [docs/design/styleframes](docs/design/styleframes)
 
 ## Aufbau
