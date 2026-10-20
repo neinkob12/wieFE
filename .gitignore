@@ -1,0 +1,9 @@
+video/node_modules/
+out/
+# Platzhalterstimme nicht einchecken, Adam-Audio schon (vertont euer Partner lokal, gerendert wird in der Cloud)
+video/public/audio/**/piper_*
+__pycache__/
+*.pyc
+TK_cookies*.json
+.venv/
+.env
