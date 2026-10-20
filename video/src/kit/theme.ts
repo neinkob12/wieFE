@@ -64,15 +64,15 @@ export const LOOKS: Record<Look['id'], Look> = {
 		fontCaption: 'Manrope', fontDisplay: 'Fraunces',
 	},
 	// B: Nachtschicht x Orchidee (gewaehlt): dunkle Petrol-Nacht, bordeauxfarbener Horizont, Salbei-Technik,
-	// Altrosa hebt hervor, Strom leuchtet petrol. Palette aus dem Orchideen-Moodboard (kein Orange).
+	// Tuerkis hebt hervor, Strom leuchtet weiss-tuerkis. Palette aus dem Orchideen-Moodboard (kein Orange, kein Rosa).
 	nacht: {
 		id: 'nacht', name: 'Nachtschicht · Orchidee',
 		skyTop: '#081214', skyBottom: '#13262B', fog: '#2A1C24',
 		ground: '#1B3335', groundAlt: '#16292B', earth: '#3A2329', earthDark: '#26161B',
 		tree: '#1F4245', treeAlt: '#29514F',
 		object: '#C9D1CA', objectAlt: '#93A39E', metal: '#7E8F8B', dark: '#121D1F', ink: '#081012',
-		accent: '#EEAEAF', highlight: '#E27886', energy: '#7ED9D6', glass: '#6CB2B3', copper: '#B98078', air: '#8FC9C6', signal: '#C2525F', magnetN: '#C2525F', magnetS: '#509C9F',
-		house: '#4E6264', roof: '#4A292F', window: '#FFE4DE', cloud: '#22383B',
+		accent: '#6CB2B3', highlight: '#6CB2B3', energy: '#E2FFFB', glass: '#C9D1CA', copper: '#A9897A', air: '#8FC9C6', signal: '#C2525F', magnetN: '#C2525F', magnetS: '#509C9F',
+		house: '#4E6264', roof: '#4A292F', window: '#FFF1E0', cloud: '#22383B',
 		text: '#F2F5F2', textDim: '#C9D1CA', cardBg: '#4A292F',
 		flat: false, roughness: 0.62, sun: 2.2, ambient: 0.62, sunColor: '#D6E8E4', hemiSky: '#6CB2B3', hemiGround: '#2A191E',
 		grain: 0.05, vignette: 0.42, glow: true,

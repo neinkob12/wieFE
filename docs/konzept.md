@@ -11,7 +11,7 @@ Vollautomatisierte TikTok-Erklärvideos: 4 Videos am Tag, je 62–75 s, Low-Poly
 | 3 | Kanal | Neuer eigener Kanal |
 | 4 | Name | „Wie funktioniert eigentlich…?“ |
 | 5 | Grundlook | 3D, nach dem ersten Prototyp: **Nachtschicht**, detailreicher und realistischer, schnellere Animationen (Update 19.10.) |
-| 6 | Farben | **Kein Orange.** Palette aus dem Orchideen-Moodboard: Petrol `#6CB2B3`, Bordeaux `#4A292F`, Altrosa `#EEAEAF`, Salbei `#C9D1CA` (Update 19.10.) |
+| 6 | Farben | **Kein Orange, kein Rosa.** Palette aus dem Orchideen-Moodboard: Türkis `#6CB2B3` als Akzent, Bordeaux `#4A292F`, Salbei `#C9D1CA`, Nacht-Petrol (Update 19./20.10.) |
 | 7 | Innenleben | Werkzeugkasten: Schnitt, Röntgen, Explosion je nach Szene |
 | 8 | Figuren | Einfache gesichtslose Figuren |
 | 9 | Untertitel | Wort für Wort, aktives Wort in Akzentfarbe, 2–4 Wörter |
